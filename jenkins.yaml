@@ -26,7 +26,7 @@ Master:
   ServiceAnnotations: {}
     #   service.beta.kubernetes.io/aws-load-balancer-backend-protocol: https
 # Used to create Ingress record (should used with ServiceType: ClusterIP)
-HostName: jenkins.kube.site
+  HostName: jenkins.kube.site
 # NodePort: <to set explicitly, choose port between 30000-32767
   ContainerPort: 8080
   SlaveListenerPort: 50000
