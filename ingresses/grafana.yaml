@@ -1,0 +1,22 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: grafana
+  namespace: kube-system
+  annotations:
+    ingress.kubernetes.io/ssl-redirect: "true"
+    kubernetes.io/ingress.class: nginx
+    kubernetes.io/tls-acme: "true"
+spec:
+  rules:
+  - host: status.kube.site
+    http:
+      paths:
+      - path: /
+        backend:
+          serviceName: monitoring-grafana
+          servicePort: 80
+  tls:
+  - hosts:
+    - status.kube.site
+    secretName: grafana-tls
