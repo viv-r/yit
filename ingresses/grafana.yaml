@@ -9,6 +9,7 @@ metadata:
     kubernetes.io/tls-acme: "true"
     ingress.kubernetes.io/auth-type: basic
     ingress.kubernetes.io/auth-secret: basic-auth
+    ingress.kubernetes.io/auth-realm: "Authentication Required"
 spec:
   rules:
   - host: status.kube.site
