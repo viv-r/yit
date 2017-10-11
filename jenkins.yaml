@@ -73,7 +73,7 @@ Master:
 
 Agent:
   Enabled: true
-  Image: gcr.io/cloud-solutions-images/jenkins-k8s-slave
+  Image:  jenkins/jenkins-slave
   ImageTag: latest
   Component: "jenkins-slave"
   Privileged: false
