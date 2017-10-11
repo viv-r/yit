@@ -74,7 +74,7 @@ Master:
 Agent:
   Enabled: true
   Image: "jenkinsci/jnlp-slave"
-  ImageTag: "3.7-1-alpine"
+  ImageTag: "3.10-1-alpine"
   Component: "jenkins-slave"
   Privileged: false
   Cpu: "10m"
