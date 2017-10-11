@@ -73,7 +73,7 @@ Master:
 
 Agent:
   Enabled: true
-  Image: "jenkins/jnlp-slave"
+  Image: "jenkinsci/jnlp-slave"
   ImageTag: "3.7-1-alpine"
   Component: "jenkins-slave"
   Privileged: false
