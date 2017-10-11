@@ -77,7 +77,7 @@ Agent:
   ImageTag: "3.10-1-alpine"
   Component: "jenkins-slave"
   Privileged: false
-  Cpu: "10m"
+  Cpu: "100m"
   Memory: "256Mi"
   # You may want to change this to true while testing a new image
   AlwaysPullImage: false
@@ -85,13 +85,6 @@ Agent:
   # Allowed types are: ConfigMap, EmptyDir, HostPath, Nfs, Pod, Secret
   # Configure the attributes as they appear in the corresponding Java class for that type
   # https://github.com/jenkinsci/kubernetes-plugin/tree/master/src/main/java/org/csanchez/jenkins/plugins/kubernetes/volumes
-  volumes:
-    - type: HostPath
-      path: /usr/bin/docker
-      path: /usr/bin/docker
-    - type: HostPath
-      path: /var/run/docker.sock
-      path: /var/run/docker.sock
 
   # - type: Secret
   #   secretName: mysecret
